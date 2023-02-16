@@ -15,3 +15,10 @@ OOP Screen Saver Built in Processing
 ![Running Screen Saver](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/images/screensaver.png)
 
 [Screen Saver Source Code](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/src/Screen)
+
+### Etch A Sketch
+OOP Etch A Sketch Built in Processing
+
+![Running Screen Saver](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/images/EtchASketch.png)
+
+[Screen Saver Source Code](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/src/etchasketch/etch)
