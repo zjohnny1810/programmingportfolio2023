@@ -1,0 +1,102 @@
+// Johnny Lam | 4 oct 2022 | EtchASketch
+int x, y;
+
+void setup() {
+  size(500, 500);
+  x=width/2;
+  y=height/2;
+  background(127);
+}
+
+void draw() {
+  stroke(0);
+  strokeWeight(3);
+  if (keyPressed) {
+    if (key == 'w') {
+      moveUp(3);
+    } else if(key=='a') {
+      moveLeft(3);
+    } else if(key=='s') {
+      moveDown(3);
+    } else if(key=='d') {
+      moveRight(3);
+    }
+  }
+}
+void mousePressed() {
+  saveFrame("image-######.png");
+}
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      moveUp(3);
+    } else if (keyCode==RIGHT) {
+      moveRight(3);
+    } else if (keyCode==LEFT) {
+      moveLeft(3);
+    } else if (keyCode==DOWN) {
+      moveDown(3);
+    }
+  }
+}
+
+void moveRight(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x+i, y);
+  }
+  x=x+rep;
+}
+
+void moveLeft(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x-i, y);
+  }
+  x=x-rep;
+}
+
+void moveUp(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x, y-i);
+  }
+  y=y-rep;
+}
+
+void moveDown(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x, y+i);
+  }
+  y=y+rep;
+}
+
+void upLeft(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x-i, y-i);
+  }
+  x=x-rep;
+  y=y-rep;
+}
+
+void downLeft(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x-i, y+i);
+  }
+  x=x-rep;
+  y=y+rep;
+}
+
+void upRight(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x+i, y-i);
+  }
+  x=x+rep;
+  y=y-rep;
+}
+
+void downRight(int rep) {
+  for (int i=0; i<rep; i=i+1) {
+    point(x+i, y+i);
+  }
+  x=x+rep;
+  y=y+rep;
+}
