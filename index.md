@@ -22,3 +22,11 @@ OOP Etch A Sketch Built in Processing
 ![Running Screen Saver](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/images/EtchASketch.png)
 
 [Screen Saver Source Code](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/src/etchasketch/etch)
+
+### Pig Latin Converter
+
+OOP Pig Latin Converter Made in replit
+
+![Running Pig Latin Converter](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/images/piglaten.png)
+
+[Pig Latin Converter Source Code](https://github.com/zjohnny1810/programmingportfolio2023/tree/main/src/Pig%20latin%20converter)
