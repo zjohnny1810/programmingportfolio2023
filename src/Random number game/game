@@ -1,1 +1,42 @@
+//     Add any import statements
+import java.util.Scanner;
+import java.util.Random;
+// Setup class and method (if applies)
+class Main {
+  public static void main(String[] args) {
+    //creat random number between 1 and 100
+    Random rando = new Random();
+    Scanner scan = new Scanner(System.in);
+    int rand = rando.nextInt(1, 101);
+    int guess ;
+    int attempts = 0;
+    boolean play= true;
+    
+    System.out.println("Pleas guess the numbner");
+    //scan for guess number
+    guess = scan.nextInt();
+    
+    while(guess != rand){
+      attempts = attempts + 1;
+      // scaner
+    //if guess is greater
+      if(guess>rand) {
+        attempts ++ ;
+        System.out.println("Your guess is too high");
+        guess = scan.nextInt();
+        //if guess is less
+      } else if (guess < rand) {
+        attempts ++ ;
+        System.out.println("Your guess is too low");
+        guess = scan.nextInt();
+      }
+  }
+    if(guess == rand){
+      attempts ++ ;
+        System.out.print("Your guess is correct!");
+        guess = scan.nextInt();
+      scan.close();
+    }
+  }
+}
 
