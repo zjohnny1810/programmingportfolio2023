@@ -34,4 +34,6 @@ OOP Pig Latin Converter Made in replit
 ### Random number game
 OOP Random Number Game Built in Replit
 
-![Running Random Number Game]()
+![Running Random Number Game](https://github.com/zjohnny1810/programmingportfolio2023/blob/main/images/numbergame.png)
+
+[Random Number Game Source Code](https://github.com/zjohnny1810/programmingportfolio2023/tree/main/src/screen%20saver)
